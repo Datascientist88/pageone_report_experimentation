@@ -13,7 +13,10 @@ from plotly.subplots import make_subplots
 from dash import dcc, html, callback, Output
 from pathlib import Path
 #load the data--------------------------------------------------------------------------------------
-df=pd.read_excel('data\dataset.xlsx')
+PATH = pathlib.Path(__file__).parent
+DATA_PATH = PATH.joinpath("./data").resolve()
+df= pd.read_excel(DATA_PATH.joinpath("dataset.xlsx") )
+#df=pd.read_excel('data\dataset.xlsx')
 
 #------General Hospital Report ------------------------------------------------------------
 #convert the date to datetime format-----------------------------------------------------------------------
