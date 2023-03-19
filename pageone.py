@@ -11,7 +11,9 @@ import dash_bootstrap_components as dbc
 import plotly_express as px
 from plotly.subplots import make_subplots
 from dash import dcc, html, callback, Output
-from pathlib import Path
+import pathlib
+import os 
+
 #load the data--------------------------------------------------------------------------------------
 PATH = pathlib.Path(__file__).parent
 DATA_PATH = PATH.joinpath("./data").resolve()
