@@ -50,7 +50,7 @@ app.layout=dbc.Container([
                     dcc.Dropdown(id='selection_doctor',
                                  multi=False,
                                  options=[],
-                                 value='د. عبدالله كمال النابلسي' # I want to make this default value whenever I switched between clinics It yields the first doctor name dynamically and doesnot render empty charts ,
+                                 value='د. عبدالله كمال النابلسي' ,# I want to make this default value whenever I switched between clinics It yields the first doctor name dynamically and doesnot render empty charts ,
                                  clearable=False ,style={'color': '#000000'}),
                     dcc.Dropdown(id='selection_op',
                                  multi=False,
